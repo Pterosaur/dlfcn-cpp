@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include <library.h>
+#include <dlfcncpp/library.h>
 
 struct people {
     std::string     m_name;
@@ -15,6 +15,9 @@ extern "C" int add(int a, int b) {
 
 int main() {
 
+    /***
+     * Demonstrate
+     */
     dlfcncpp::library mainProgram;
     if (!mainProgram.open()) {
         std::cerr << mainProgram.error() << std::endl;
