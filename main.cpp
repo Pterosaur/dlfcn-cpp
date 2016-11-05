@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include "library.h"
+#include <library.h>
 
 struct people {
     std::string     m_name;
